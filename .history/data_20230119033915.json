@@ -1,0 +1,23 @@
+{
+    "name": "Manuel LABRIDY",
+    "avatar":"https://portfolioml26151fd83d4a40cb89e358a0b8c234d582358-staging.s3.us-east-1.amazonaws.com/ManuelTL2.jpg?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEAkaCXVzLWVhc3QtMSJIMEYCIQCV3Vm8OFtrtTalpPdjId31ACPz99WPJJ5g1X9Bvox2sgIhANNcSEZ4zXK5NzoMq%2B6OiIk4R4mfen%2F%2Bt2AMKBdUngtpKuQCCHIQARoMMDIzNTY0NzA2MDAwIgz3SuuTiHEqgh%2B6jnAqwQIwti39OxinlVkOCWbVzkRojhzzFtJR0DdctOqD7Hg7Pvm8c6UH302xuS9fthEmJC8TdXjf5YGip8EVMk7nm7cLzFasEaHaEQ%2BphtZNZMYw6c%2FV7Q3lF%2FGvBNz8l0r%2F0SoNtBVBaucEKZtVsp8T9yZDlojuRkRskDemxynADJveRTapqnpHWMAp93Sb%2BJnOAXmBh0uuHhOYTam3%2B0id3mOD1YKrkBB9cyWfv%2FOF8ZiaOywjCAp6avL9F9rdSuXcdGBxdgZfqfLUUfK2kIVmtyczeXOKPjpam0qPud684HTUfFJwwD%2BGB8iHFSk9TmPWPlXbaIHU2%2Bh5mS9bhtQMrRaKWvqi2Xvwxt1rX0EQf6uloCr11M%2FlWzBbrHAAKZolbj3Pu2yi1ynzbAkArIP5z%2BDpHkozyjJjywODYaP%2BdZatGJ8wtICkngY6sgICvcMexwQsrWO3oKMUZw5KoR48Ue7lKqwvp7Eit5YIon5KBJZKqnqdvxT%2F6auK2%2BT72FoVrX9tq18cs%2FvbouMmuxWv0uaIhNw1LwA2d8EGTGyrpbkOu1cN2ACHd8auBCeNnyO2wQpy22%2BYzXDVgA5HwaJ1UVh%2BgTCqAae4fpIvPjYxJqat1YCnhfYi0ASgJ%2Fc1dKDjjAxWfm4F93ARW%2BEfUdUpa5ImyxfV%2BvXfoEe1SsLLfWJaluCJkOcXLN%2FvZeGSHdE%2FDzGOnr3LURUJK%2FCmAdkVL%2BwRMQQ44wgMUpexCcFjStoXwnvmkOnm86yQlF4F%2FQ2wWHQGa6TjpGybGCNMUE6zPi8W80k6Bh%2Fwz7kXvsmpfwo%2F8KyPnpDBl%2BKDM4K6xh86YxpWjZyHmHxwEMp5lGE%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20230119T083839Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQK7EQ4DIAKYNFGG5%2F20230119%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=a4a2d76cf66958c6d2d8bcbf4a8051ed716a56d7306f6cb2d2e5ef104f311a47",
+    "links":[
+        {
+         "title":"vercel",
+         "url":"https://portfolio-manu.vercel.app/",
+         "image":"avatar2"
+        }
+    ],
+    "social":[
+        {
+         "title":"Github",
+         "url":"",
+         "image":"avatar3"
+        },
+        {
+         "title":"instagram",
+         "url":"",
+         "image":"avatar4"
+        }
+    ]
+}

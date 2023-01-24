@@ -1,0 +1,24 @@
+
+{
+    "name": "Manuel LABRIDY",
+    "avatar":"",
+    "links":[
+        {
+         "title":"vercel",
+         "href":"https://portfolio-manu.vercel.app/",
+         "image":"avatar2"
+        }
+    ],
+    "social":[
+        {
+         "title":"Github",
+         "href":"",
+         "image":"avatar3"
+        },
+        {
+         "title":"instagram",
+         "href":"",
+         "image":"avatar4"
+        }
+    ]
+}

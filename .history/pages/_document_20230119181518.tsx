@@ -1,0 +1,15 @@
+import { Html, Head, Main, NextScript } from 'next/document';
+import ScrollUp from '../components/scrollup/ScrollUp';
+
+export default function Document() {
+  return (
+    <Html lang="en">
+      <Head />
+      <body className="body main">
+        <Main />
+        <NextScript />
+      </body>
+      <ScrollUp/>
+    </Html>
+  )
+}
