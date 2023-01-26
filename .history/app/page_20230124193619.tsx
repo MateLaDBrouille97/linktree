@@ -7,7 +7,6 @@ import image1 from "../public/ManuelTL2.jpg";
 import { useEffect, useState } from "react";
 import Socials from "../components/Socials";
 import Share from "@/components/Share";
-import LinkShare from "@/components/LinkShare";
 
 function LinkCard({
   href,
@@ -38,7 +37,19 @@ function LinkCard({
         <h2 className="flex justify-center items-center font-semibold w-full text-gray-700 -ml-10 home__linkcard-title">
           {title}
         </h2>
-        <LinkShare/>
+        <div className="linkcard-share">
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="22"
+            height="22"
+            fill="white"
+            className="bi bi-share-fill"
+            viewBox="0 0 16 16"
+          >
+            {" "}
+            <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z" />{" "}
+          </svg>
+        </div>
       </div>
     </a>
   );
@@ -89,7 +100,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="flex items-center flex-col mx-auto w-full justify-center mt-16 px-8 home-card " link="https://portfolio-manu.vercel.app/"  >
+    <div className="flex items-center flex-col mx-auto w-full justify-center mt-16 px-8 ">
       <Share/>
       <a
         href="#home"
@@ -119,6 +130,7 @@ export default function Home() {
       <div className="gap-3 items-center flex mt-10">
         {data?.socials?.map((social) => {
          return(
+         
           <Socials title={social?.title} key={social?.href} />
           )
         })}

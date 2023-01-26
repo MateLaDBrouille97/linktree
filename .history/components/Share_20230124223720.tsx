@@ -42,7 +42,9 @@ const Share = () => {
     // }
   }, []);
 
-  
+  useEffect(() => {
+    clickButton();
+  }, []);
 
   const clickButton = () => {
     const field = document.querySelector(".field"),
@@ -52,7 +54,7 @@ const Share = () => {
     //   input2 = field2?.getAttribute("link");
     // console.log(input, input2);
     if (input) {
-      input.select(); //copy the link 
+      input.select();
       navigator.clipboard
         .writeText(value)
         .then(() => {
@@ -70,7 +72,7 @@ const Share = () => {
         .catch((err) => {
           console.error("Failed to copy: ", err);
         });
-    }//
+    }
   };
 
   const showModal = () => {

@@ -97,14 +97,25 @@
 }
 
 .linkcard-img{
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    
+    border-radius: 12px;
 }
 
 
+.linkcard-share{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    color: rgba(255, 255, 255, 0.829);
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.47);
+}
 
+.linkcard-share svg{
+    fill:black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .home__img{
 /* background: url(../../assets/Mur.jpg); */

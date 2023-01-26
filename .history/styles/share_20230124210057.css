@@ -203,14 +203,14 @@ header .close {
 }
 
 .field button {
-  padding: 4px 14px;
+  padding: 5px 18px;
   border: 2px solid transparent;
   color: #fff;
   background: #7d2ae8;
   border-radius: 4px;
   cursor: pointer;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .active-modal {

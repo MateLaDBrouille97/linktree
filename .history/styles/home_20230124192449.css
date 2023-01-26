@@ -97,14 +97,16 @@
 }
 
 .linkcard-img{
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    
+    border-radius: 12px;
 }
 
 
-
+.linkcard-share{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(52,52,52);
+}
 
 .home__img{
 /* background: url(../../assets/Mur.jpg); */

@@ -7,8 +7,8 @@ import '../styles/home.css';
 import '../styles/socials.css';
 import '../styles/share.css';
 import '../styles/linkShare.css';
-// import ScrollDow from '../components/ScrollDow';
-// import ScrollUp from '../components/scrollup/ScrollUp'
+import ScrollDow from '../components/ScrollDow';
+import ScrollUp from '../components/scrollup/ScrollUp'
 
 export default function RootLayout({
     children,

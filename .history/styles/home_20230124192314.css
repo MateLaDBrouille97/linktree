@@ -69,6 +69,7 @@
     background-color: rgba(255, 255, 255, 0.829);
     border-color: whitesmoke;
     border-width: 3px;
+    width:460px;
     transition: transform 0.5s;
     box-shadow: 5px 5px 9px -1px rgba(0,0,0,0.2);
     border-radius: 24px;
@@ -97,14 +98,16 @@
 }
 
 .linkcard-img{
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    
+    border-radius: 12px;
 }
 
 
-
+.linkcard-share{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(52,52,52);
+}
 
 .home__img{
 /* background: url(../../assets/Mur.jpg); */

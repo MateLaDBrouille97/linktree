@@ -89,7 +89,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="flex items-center flex-col mx-auto w-full justify-center mt-16 px-8 home-card " link="https://portfolio-manu.vercel.app/"  >
+    <div className="flex items-center flex-col mx-auto w-full justify-center mt-16 px-8 home-card " link="https://portfolio-manu.vercel.app/" >
       <Share/>
       <a
         href="#home"

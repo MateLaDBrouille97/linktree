@@ -89,7 +89,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="flex items-center flex-col mx-auto w-full justify-center mt-16 px-8 home-card " link="https://portfolio-manu.vercel.app/"  >
+    <div className="flex items-center flex-col mx-auto w-full justify-center mt-16 px-8 ">
       <Share/>
       <a
         href="#home"
@@ -119,6 +119,7 @@ export default function Home() {
       <div className="gap-3 items-center flex mt-10">
         {data?.socials?.map((social) => {
          return(
+         
           <Socials title={social?.title} key={social?.href} />
           )
         })}
