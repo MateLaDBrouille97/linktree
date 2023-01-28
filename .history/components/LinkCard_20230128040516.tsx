@@ -49,11 +49,11 @@ function LinkCard({ link }) {
         <div className="home__linkcard-img">
           {image && (
             <Image
-              className={href?"linkcard-img":"linkcard-img"}
+              className="linkcard-img"
               alt={link?.title}
               src={image}
-              width={40}
-              height={40}
+              // width={40}
+              // height={40}
             />
           )}
         </div>

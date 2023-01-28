@@ -69,7 +69,7 @@ export default function Home2() {
         {dbUser?.firstName} {dbUser?.lastName}
       </h1>
       <h3 className="home__description" style={{ color: "white" }}>
-        {dbUser?.title?.[0]}, {dbUser?.title?.[1]}, {dbUser?.title?.[2]}
+        {dbUser?.title?.[0]}, {dbUser?.title?.[1]} and {dbUser?.title?.[2]}
       </h3>
 
       <div className="grid place-items-center w-full mt-2">
