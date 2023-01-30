@@ -38,7 +38,7 @@ const Share = () => {
     // console.log(input, input2);
     if (input) {
       input.select(); //copy the link 
-      navigator.clipboard.writeText(input.value).then(() => {
+      navigator.clipboard.writeText(value).then(() => {
           if (field) field.classList.add("active");
           if (copy) {
             copy.innerText = "Copied";
