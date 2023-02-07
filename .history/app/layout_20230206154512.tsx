@@ -9,15 +9,21 @@ import '../styles/share.css';
 import '../styles/linkShare.css';
 // import ScrollDow from '../components/ScrollDow';
 // import ScrollUp from '../components/scrollup/ScrollUp'
-import React from 'react';
+import React, { ReactNode } from 'react';
+
+interface Props {
+  children?: ReactNode
+  // any props that come into the component
+}
 
 
-
-export default function RootLayout({ children }) {
+export default function RootLayout({ children }: Props) {
     return (
       
          <html lang="en">
         <body>{children}</body>
+        {/* <ScrollDow/> */}
+        {/* <ScrollUp/> */}
       </html>
       
      

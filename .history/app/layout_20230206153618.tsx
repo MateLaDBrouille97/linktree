@@ -12,12 +12,13 @@ import '../styles/linkShare.css';
 import React from 'react';
 
 
-
-export default function RootLayout({ children }) {
+export default function RootLayout({children}:{children:any}) {
     return (
       
          <html lang="en">
         <body>{children}</body>
+        {/* <ScrollDow/> */}
+        {/* <ScrollUp/> */}
       </html>
       
      
