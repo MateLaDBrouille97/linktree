@@ -144,7 +144,7 @@ body{
 .home__img{
 /* background: url(../../assets/Mur.jpg); */
 position:relative;
-
+background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
 box-shadow: inset 0 0 0 9px rgb(255 255 255/30%);
@@ -155,11 +155,25 @@ height: 350px;
 animation: profile__animate 8s ease-in-out infinite 1s;
 }
 
+.home__img::after{
+    bottom: calc(var(--link-profile-corner)/10);
+    right: calc(var(--link-profile-corner)/10);
+}
+.home-img-check{
+    content: " ";
+    position: absolute;
+    display: inline-block;
+    /* background: url(//bio.linkcdn.to/instabio.cc/static/images/verified_sprite.png) -2000px/cover no-repeat; */
+    bottom: 4px;
+    right: 5px;
+    z-index: 2;
+    width: 20px;
+    height: 20px;
+    fill:rgb(9, 95, 208)
+}
 
 
-
-
-/* .home-img-check{
+.home-img-check{
     position:absolute;
     top:232px;
     left:860px;
@@ -167,7 +181,7 @@ animation: profile__animate 8s ease-in-out infinite 1s;
     width: 20px;
     height: 20px;
     
-} */
+}
 
 @keyframes profile__animate {
     0%{

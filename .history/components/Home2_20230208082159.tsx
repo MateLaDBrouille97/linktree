@@ -41,7 +41,7 @@ export default function Home2() {
 
   return (
     <div
-      className="flex-col mx-auto w-full mt-16 px-8 home-card home"
+      className="flex-col mx-auto w-full mt-16 px-8 home-card "
       link="https://portfolio-manu.vercel.app/"
     >
       <Share />

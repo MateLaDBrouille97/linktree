@@ -10,6 +10,7 @@ import LinkCard from "./LinkCard";
 import { useUserContext } from "../contexts/UserContext";
 import { useLinkContext } from "@/contexts/LinkContext";
 
+
 export default function Home2() {
   /*==================== Toggle Menu ====================== */
   const [toggle, showMenu] = useState(false);
