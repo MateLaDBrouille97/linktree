@@ -693,6 +693,13 @@ export const schema = {
                         ]
                     }
                 },
+                "avatar": {
+                    "name": "avatar",
+                    "isArray": false,
+                    "type": "String",
+                    "isRequired": false,
+                    "attributes": []
+                },
                 "createdAt": {
                     "name": "createdAt",
                     "isArray": false,
@@ -771,5 +778,5 @@ export const schema = {
     },
     "nonModels": {},
     "codegenVersion": "3.3.2",
-    "version": "078a18413509a949838ebe7d7e838fb5"
+    "version": "deb3a1eee3df79ed16df5a8620a4c826"
 };

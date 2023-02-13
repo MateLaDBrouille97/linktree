@@ -69,13 +69,15 @@ export default function Home2() {
         {dbUser?.title?.[0]}, {dbUser?.title?.[1]}, {dbUser?.title?.[2]}
       </h3>
 
-      <div className="grid place-items-center mt-2 home__linkcard">
+      <div className="grid place-items-center w-full mt-2 home__linkcard">
         {links.map((link) => (
           <LinkCard key={link.href} link={link} />
         ))}
-      </div>   
+      </div>
+      
     </div> 
     <Footer/>
     </>
+    
   );
 }

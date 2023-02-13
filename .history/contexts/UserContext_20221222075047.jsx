@@ -34,7 +34,7 @@ const UserContextProvider = ({ children }) => {
   , []);
 
   
-  const [avatar,setAvatar]=useState();
+  const [image,setImage]=useState();
   const [cv,setCV]= useState(null);
   const s3 = new aws.S3();
 
@@ -49,9 +49,9 @@ const UserContextProvider = ({ children }) => {
   const fetchImage=async()=>{
     const params = {
       Bucket: 'portfolioml26151fd83d4a40cb89e358a0b8c234d582358-staging',
-      Key: dbUser?.avatar,
+      Key: dbUser?.image,
     };
-    await s3.getSignedUrlPromise('getObject', params).then((a)=>setAvatar(a));
+    await s3.getSignedUrlPromise('getObject', params).then((i)=>setImage(i));
   }
  fetchImage();
  },[dbUser])
@@ -80,7 +80,7 @@ const UserContextProvider = ({ children }) => {
 
 
   return (
-    <UserContext.Provider value={{ dbUser,avatar,cv }}>
+    <UserContext.Provider value={{ dbUser,image,cv }}>
       {children}
     </UserContext.Provider>
   );

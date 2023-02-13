@@ -41,9 +41,9 @@ function LinkCard({ link }) {
   return (
     <a
       href={link?.href}
-      className="flex justify-center items-center p-3 w-full rounded-lg hover:scale-105 transition-all bg-gray-100 mb-3 -mt-2 max-w-3xl home__linkcard-box"
+      className="flex justify-center items-center p-3 w-full rounded-lg hover:scale-105 transition-all bg-gray-100 mb-3 -mt-2 max-w-3xl .home__linkcard-box"
     >
-      <div className="flex w-full home__linkcard-card">
+      <div className="flex text-center w-full home__linkcard-card">
         <div className="home__linkcard-img">
           {image && (
             <Image
@@ -55,7 +55,7 @@ function LinkCard({ link }) {
             />
           )}
         </div>
-        <h2 className=" font-semibold w-full text-gray-700 -ml-10 home__linkcard-title">
+        <h2 className="flex justify-center items-center text-center font-semibold w-full text-gray-700 -ml-10 home__linkcard-title">
           {link?.title}
         </h2>
         {href&&(<LinkShare href={href} />)}

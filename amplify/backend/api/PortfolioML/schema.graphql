@@ -89,5 +89,6 @@ type User @model @auth(rules: [{allow: public}]) {
   descriptionLong: String
   CV: String
   Links: [Link] @hasMany(indexName: "byUser", fields: ["id"])
+  avatar: String
 }
  

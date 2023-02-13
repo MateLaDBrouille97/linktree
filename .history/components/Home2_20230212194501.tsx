@@ -69,13 +69,24 @@ export default function Home2() {
         {dbUser?.title?.[0]}, {dbUser?.title?.[1]}, {dbUser?.title?.[2]}
       </h3>
 
-      <div className="grid place-items-center mt-2 home__linkcard">
+      <div className="grid place-items-center w-full mt-2">
         {links.map((link) => (
           <LinkCard key={link.href} link={link} />
         ))}
-      </div>   
+      </div>
+      <section className="home section" id="home">
+        <div className="home__container container grid">
+          <div className="gap-3 items-center flex mt-10">
+            {data?.socials?.map((social) => {
+              return <Socials title={social?.title} key={social?.href} />;
+            })}
+          </div>
+        </div>
+       
+      </section>
     </div> 
     <Footer/>
     </>
+    
   );
 }

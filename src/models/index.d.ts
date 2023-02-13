@@ -235,6 +235,7 @@ type EagerUser = {
   readonly descriptionLong?: string | null;
   readonly CV?: string | null;
   readonly Links?: (Link | null)[] | null;
+  readonly avatar?: string | null;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
 }
@@ -265,6 +266,7 @@ type LazyUser = {
   readonly descriptionLong?: string | null;
   readonly CV?: string | null;
   readonly Links: AsyncCollection<Link>;
+  readonly avatar?: string | null;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
 }

@@ -9,8 +9,6 @@ import Share from "@/components/Share";
 import LinkCard from "./LinkCard";
 import { useUserContext } from "../contexts/UserContext";
 import { useLinkContext } from "@/contexts/LinkContext";
-import Footer from "../components/Footer";
-
 
 export default function Home2() {
   /*==================== Toggle Menu ====================== */
@@ -42,7 +40,7 @@ export default function Home2() {
   }, []);
 
   return (
-    <>
+    
     <div
       className="flex-col mx-auto w-full mt-16 px-8 home-card home"
       link="https://portfolio-manu.vercel.app/"
@@ -69,13 +67,31 @@ export default function Home2() {
         {dbUser?.title?.[0]}, {dbUser?.title?.[1]}, {dbUser?.title?.[2]}
       </h3>
 
-      <div className="grid place-items-center mt-2 home__linkcard">
+      <div className="grid place-items-center w-full mt-2">
         {links.map((link) => (
           <LinkCard key={link.href} link={link} />
         ))}
-      </div>   
-    </div> 
-    <Footer/>
-    </>
+      </div>
+      <section className="home section" id="home">
+        <div className="home__container container grid">
+          <div className="gap-3 items-center flex mt-10">
+            {data?.socials?.map((social) => {
+              return <Socials title={social?.title} key={social?.href} />;
+            })}
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div className="footer">
+          <div className="footer__container">
+            <span className="footer__copy">
+              &#169; Manuel LABRIDY All rights reserved
+            </span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
   );
 }

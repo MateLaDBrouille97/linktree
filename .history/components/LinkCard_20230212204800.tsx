@@ -41,9 +41,9 @@ function LinkCard({ link }) {
   return (
     <a
       href={link?.href}
-      className="flex justify-center items-center p-3 w-full rounded-lg hover:scale-105 transition-all bg-gray-100 mb-3 -mt-2 max-w-3xl home__linkcard-box"
+      className="flex justify-center items-center p-3 rounded-lg hover:scale-105 transition-all bg-gray-100 mb-3 -mt-2 max-w-3xl home__linkcard-box"
     >
-      <div className="flex w-full home__linkcard-card">
+      <div className="flex text-center w-full home__linkcard-card">
         <div className="home__linkcard-img">
           {image && (
             <Image
