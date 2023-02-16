@@ -8,17 +8,17 @@ body{
   background-image: linear-gradient(
   205deg,
   hsl(0deg 0% 1%) 0%,
-  hsl(263deg 58% 9%) 5%,
-  hsl(250deg 63% 16%) 11%,
-  hsl(244deg 71% 23%) 18%,
-  hsl(262deg 69% 28%) 26%,
-  hsl(304deg 48% 33%) 35%,
-  hsl(335deg 44% 48%) 46%,
-  hsl(355deg 73% 64%) 59%,
-  hsl(8deg 92% 69%) 73%,
-  hsl(19deg 91% 69%) 85%,
-  hsl(29deg 90% 69%) 94%,
-  hsl(39deg 88% 68%) 100%
+  hsl(264deg 60% 9%) 5%,
+  hsl(250deg 63% 15%) 11%,
+  hsl(245deg 71% 21%) 18%,
+  hsl(264deg 76% 24%) 26%,
+  hsl(311deg 80% 21%) 35%,
+  hsl(337deg 82% 28%) 46%,
+  hsl(354deg 79% 35%) 59%,
+  hsl(13deg 76% 41%) 73%,
+  hsl(24deg 73% 46%) 85%,
+  hsl(32deg 72% 51%) 94%,
+  hsl(39deg 85% 56%) 100%
 );
 
 }
