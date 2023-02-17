@@ -67,8 +67,8 @@ const Share = () => {
         <button className="share-button share-link" onClick={showModal}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="26"
-            height="26"
+            width="16"
+            height="16"
             fill="currentColor"
             className="bi bi-three-dots"
             viewBox="0 0 16 16"
