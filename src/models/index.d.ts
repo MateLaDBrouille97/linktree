@@ -2,6 +2,12 @@ import { ModelInit, MutableModel, __modelMeta__, ManagedIdentifier } from "@aws-
 // @ts-ignore
 import { LazyLoading, LazyLoadingDisabled, AsyncCollection } from "@aws-amplify/datastore";
 
+export enum BlogCategory {
+  USEFULHACKS = "USEFULHACKS",
+  PROJECTS = "PROJECTS",
+  NEWS = "NEWS"
+}
+
 export enum SkillType {
   BACKEND = "BACKEND",
   FRONTEND = "FRONTEND",
@@ -26,6 +32,74 @@ export enum PortfolioType {
 }
 
 
+
+type EagerCategory = {
+  readonly [__modelMeta__]: {
+    identifier: ManagedIdentifier<Category, 'id'>;
+    readOnlyFields: 'createdAt' | 'updatedAt';
+  };
+  readonly id: string;
+  readonly name?: string | null;
+  readonly image?: string | null;
+  readonly createdAt?: string | null;
+  readonly updatedAt?: string | null;
+}
+
+type LazyCategory = {
+  readonly [__modelMeta__]: {
+    identifier: ManagedIdentifier<Category, 'id'>;
+    readOnlyFields: 'createdAt' | 'updatedAt';
+  };
+  readonly id: string;
+  readonly name?: string | null;
+  readonly image?: string | null;
+  readonly createdAt?: string | null;
+  readonly updatedAt?: string | null;
+}
+
+export declare type Category = LazyLoading extends LazyLoadingDisabled ? EagerCategory : LazyCategory
+
+export declare const Category: (new (init: ModelInit<Category>) => Category) & {
+  copyOf(source: Category, mutator: (draft: MutableModel<Category>) => MutableModel<Category> | void): Category;
+}
+
+type EagerBlogPost = {
+  readonly [__modelMeta__]: {
+    identifier: ManagedIdentifier<BlogPost, 'id'>;
+    readOnlyFields: 'createdAt' | 'updatedAt';
+  };
+  readonly id: string;
+  readonly title?: string | null;
+  readonly subtitle?: string | null;
+  readonly description?: string | null;
+  readonly image?: string | null;
+  readonly userID: string;
+  readonly category?: BlogCategory | keyof typeof BlogCategory | null;
+  readonly createdAt?: string | null;
+  readonly updatedAt?: string | null;
+}
+
+type LazyBlogPost = {
+  readonly [__modelMeta__]: {
+    identifier: ManagedIdentifier<BlogPost, 'id'>;
+    readOnlyFields: 'createdAt' | 'updatedAt';
+  };
+  readonly id: string;
+  readonly title?: string | null;
+  readonly subtitle?: string | null;
+  readonly description?: string | null;
+  readonly image?: string | null;
+  readonly userID: string;
+  readonly category?: BlogCategory | keyof typeof BlogCategory | null;
+  readonly createdAt?: string | null;
+  readonly updatedAt?: string | null;
+}
+
+export declare type BlogPost = LazyLoading extends LazyLoadingDisabled ? EagerBlogPost : LazyBlogPost
+
+export declare const BlogPost: (new (init: ModelInit<BlogPost>) => BlogPost) & {
+  copyOf(source: BlogPost, mutator: (draft: MutableModel<BlogPost>) => MutableModel<BlogPost> | void): BlogPost;
+}
 
 type EagerLink = {
   readonly [__modelMeta__]: {
@@ -236,6 +310,7 @@ type EagerUser = {
   readonly CV?: string | null;
   readonly Links?: (Link | null)[] | null;
   readonly avatar?: string | null;
+  readonly BlogPosts?: (BlogPost | null)[] | null;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
 }
@@ -267,6 +342,7 @@ type LazyUser = {
   readonly CV?: string | null;
   readonly Links: AsyncCollection<Link>;
   readonly avatar?: string | null;
+  readonly BlogPosts: AsyncCollection<BlogPost>;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
 }

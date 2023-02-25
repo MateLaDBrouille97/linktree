@@ -8,12 +8,14 @@ function LinkCard({ link }) {
 
   // ------------------------------- //
 
+  
+
   const [image, setImage] = useState();
   const[href,setHref]=useState();
   const { dbUser } = useUserContext();
-  const aws = require("aws-sdk");
-  const s3 = new aws.S3();
 
+  const s3 = new aws.S3();
+const aws = require("aws-sdk");
   /* Fetch Image */
   aws.config.update({
     accessKeyId: "AKIAQK7EQ4DINBSQQM5L",
@@ -28,7 +30,7 @@ function LinkCard({ link }) {
       };
       await s3.getSignedUrlPromise("getObject", params).then((i) => setImage(i));
     };
-    fetchImage()
+    fetchImage();
   }, [dbUser]);
 
   useEffect(()=>{

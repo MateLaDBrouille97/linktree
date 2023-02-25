@@ -60,9 +60,7 @@ const LinkContextProvider = ({ children }) => {
 
 
   return (
-    <LinkContext.Provider value={{
-       links
-        }}>
+    <LinkContext.Provider value={{ links }}>
       {children}
     </LinkContext.Provider>
   );
