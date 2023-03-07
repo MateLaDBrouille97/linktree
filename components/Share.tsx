@@ -100,34 +100,34 @@ const Share = () => {
           <p>Share this link via </p>
           <ul className="icons ">
             <FacebookShareButton
-              url="http://localhost:3000/"
+              url="https://linktree-nine-phi.vercel.app/"
               className="social__link-share"
             >
               <FacebookIcon size={24} round={true} />
             </FacebookShareButton>
-            <FacebookMessengerShareButton url="http://localhost:3000/" appId="">
+            <FacebookMessengerShareButton url="https://linktree-nine-phi.vercel.app/" appId="">
               <FacebookMessengerIcon size={24} round={true} />
             </FacebookMessengerShareButton>
             <LinkedinShareButton
-              url="http://localhost:3000/"
+              url="https://linktree-nine-phi.vercel.app/"
               // className="social__link-share"
             >
               <LinkedinIcon size={24} round={true} />
             </LinkedinShareButton>
             <TwitterShareButton
-              url="http://localhost:3000/"
+              url="https://linktree-nine-phi.vercel.app/"
               // className="social__link-share"
             >
               <TwitterIcon size={24} round={true} />
             </TwitterShareButton>
             <WhatsappShareButton
-              url="http://localhost:3000/"
+              url="https://linktree-nine-phi.vercel.app/"
               // className="social__link-share"
             >
               <WhatsappIcon size={24} round={true} />
             </WhatsappShareButton>
             <TelegramShareButton
-              url="http://localhost:3000/"
+              url="https://linktree-nine-phi.vercel.app/"
               // className="social__link-share"
             >
               <TelegramIcon size={24} round={true} />

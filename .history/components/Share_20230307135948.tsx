@@ -28,22 +28,6 @@ const Share = () => {
     });
   }, []);
 
-  useEffect(() => {
-    // copy?.onclick=()=>{
-    //     input?.select();
-    //     if(document.execCommand("copy")){
-    //         field?.classList.add("active");
-    //         copy?.innerText="Copied";
-    //         setTimeout(()=>{
-    //             field?.classList.remove("active");
-    //             copy?.innerText="Copy";
-    //         },3000)
-    //     }
-    // }
-  }, []);
-
-  
-
   const clickButton = () => {
     const field = document.querySelector(".field"),
       input = field?.querySelector("input"),
@@ -52,9 +36,9 @@ const Share = () => {
     //   input2 = field2?.getAttribute("link");
     // console.log(input, input2);
     if (input) {
-      input.select(); //copy the link 
+      input.select(); //copy the link
       navigator.clipboard
-        .writeText(value)
+        .writeText(input.value)
         .then(() => {
           if (field) field.classList.add("active");
           if (copy) {
@@ -65,12 +49,12 @@ const Share = () => {
             if (copy) {
               copy.innerText = "Copy";
             }
-          }, 3000);
+          }, 3000000);
         })
         .catch((err) => {
           console.error("Failed to copy: ", err);
         });
-    }//
+    } //
   };
 
   const showModal = () => {
@@ -83,14 +67,14 @@ const Share = () => {
         <button className="share-button share-link" onClick={showModal}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="25"
-            height="25"
-            fill="white"
-            className="bi bi-share-fill"
+            width="26"
+            height="26"
+            fill="currentColor"
+            className="bi bi-three-dots"
             viewBox="0 0 16 16"
           >
             {" "}
-            <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z" />{" "}
+            <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />{" "}
           </svg>
         </button>
       </header>
@@ -116,35 +100,35 @@ const Share = () => {
           <p>Share this link via </p>
           <ul className="icons ">
             <FacebookShareButton
-              url="http://localhost:3000/"
+              url="https://linktree-nine-phi.vercel.app/"
               className="social__link-share"
             >
               <FacebookIcon size={24} round={true} />
             </FacebookShareButton>
-            <FacebookMessengerShareButton url="http://localhost:3000/" appId="">
+            <FacebookMessengerShareButton url="https://linktree-nine-phi.vercel.app/" appId="">
               <FacebookMessengerIcon size={24} round={true} />
             </FacebookMessengerShareButton>
             <LinkedinShareButton
-              url="http://localhost:3000/"
-              className="social__link-share"
+              url="https://linktree-nine-phi.vercel.app/"
+              // className="social__link-share"
             >
               <LinkedinIcon size={24} round={true} />
             </LinkedinShareButton>
             <TwitterShareButton
-              url="http://localhost:3000/"
-              className="social__link-share"
+              url="https://linktree-nine-phi.vercel.app/"
+              // className="social__link-share"
             >
               <TwitterIcon size={24} round={true} />
             </TwitterShareButton>
             <WhatsappShareButton
-              url="http://localhost:3000/"
-              className="social__link-share"
+              url="https://linktree-nine-phi.vercel.app/"
+              // className="social__link-share"
             >
               <WhatsappIcon size={24} round={true} />
             </WhatsappShareButton>
             <TelegramShareButton
-              url="http://localhost:3000/"
-              className="social__link-share"
+              url="https://linktree-nine-phi.vercel.app/"
+              // className="social__link-share"
             >
               <TelegramIcon size={24} round={true} />
             </TelegramShareButton>
@@ -164,7 +148,9 @@ const Share = () => {
               <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z" />{" "}
             </svg>
             <input type="text" value={link} />
-            <button onClick={clickButton}>Copy</button>
+            <button onClick={clickButton} onChange={clickButton}>
+              Copy
+            </button>
           </div>
         </div>
       </div>
