@@ -18,6 +18,7 @@ export default function Home2() {
   const [activeNav, setActiveNav] = useState("#home");
   const { dbUser,avatar } = useUserContext();
   const { links } = useLinkContext();
+  const [filteredData,setFilteredData]=useState([]);
 
   /* +++++++++++++++++++++++++++++++++++++++++++++++++ */
 
@@ -40,6 +41,17 @@ export default function Home2() {
   useEffect(() => {
     showMenu(true);
   }, []);
+
+  useEffect (()=>{
+    const filter=links.sort((a, b) => {
+        
+      if (a.createdAt > b.createdAt) return 1
+      if (a.createdAt < b.createdAt) return -1
+  
+      return 0
+    })
+   setFilteredData(filter);
+  },[links])
 
   return (
     <>
